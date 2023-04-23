@@ -41,7 +41,9 @@ export default class Server {
   middlewares() {
     this.app.use(cors())
 
-    this.app.use(logger('dev'))
+    if (process.env.ENV_MODE !== 'TEST') {
+      this.app.use(logger('dev'))
+    }
 
     this.app.use(express.json())
 
