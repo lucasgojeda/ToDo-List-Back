@@ -23,7 +23,10 @@ const options = {
     },
     servers: [
       {
-        url: ['https://todo-list-back-7wn2.onrender.com/api'],
+        url: 'https://todo-list-back-7wn2.onrender.com/api',
+      },
+      {
+        url: 'http://localhost:8080/api',
       },
     ],
   },
