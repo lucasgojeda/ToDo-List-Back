@@ -7,7 +7,7 @@
     "dev": "nodemon --config nodemon.json ./src/index.ts",
     "build": "tsc",
     "test": "jest --watchAll",
-    "start": "node ./dist/index.js",
+    "start": "node ./dist/src/index.js",
     "lint": "eslint . --config .eslintrc.json",
     "lint:fix": "eslint . --fix --config .eslintrc.json",
     "prepare": "husky install"
