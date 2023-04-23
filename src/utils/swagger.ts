@@ -14,8 +14,7 @@ const options = {
     info: {
       title: 'ToDo List',
       version: '1.0.0',
-      description:
-        'ToDo List application for the internship at Webmobi company',
+      description: 'ToDo List application',
       contact: {
         name: 'Lucas Gabriel Ojeda',
         url: 'https://lucasgabrielojeda.netlify.app/',
@@ -24,7 +23,10 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:8080/api',
+        url: [
+          'https://todo-list-back-7wn2.onrender.com/api',
+          'http://localhost:8080/api',
+        ],
       },
     ],
   },
